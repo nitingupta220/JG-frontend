@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 id="searchHeading">{{message}}
+        <span>
+            <a href="#" class="clearResults" button="reset">( Clear )</a>
+        </span>
+    </h2>
+    <div class="media" ng-repeat="result in search">
+        <img class="mr-3" src="{{result.artworkUrl30}}" height="100" width="150">
+        <div class="media-body">
+            <h5 class="mt-0">Artist name: {{result.artistName}}</h5>
+            <h6 class="mt-0">Track name: {{result.trackName}}</h6>
+            <p>{{result.shortDescription}}</p>
+        </div>
+    </div>
+</div>
