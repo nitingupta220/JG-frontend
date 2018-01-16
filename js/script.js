@@ -1,11 +1,5 @@
 var app = angular.module('JGApp', ['ngRoute']);
 
-app.config(['$qProvider', '$routeProvider', function ($qProvider, $routeProvider) {
-    $qProvider.errorOnUnhandledRejections(false);
-    'use strict';
-
-}]);
-
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
