@@ -1,4 +1,4 @@
-var app = angular.module('routingApp', ['ngRoute']);
+var app = angular.module('JGApp', ['ngRoute']);
 
 app.config(['$qProvider', '$routeProvider', function ($qProvider, $routeProvider) {
     $qProvider.errorOnUnhandledRejections(false);
@@ -49,7 +49,3 @@ app.controller('resultController', function ($scope, $http, $location) {
 
 });
 
-// app.controller('contactController', function ($scope) {
-//     'use strict';
-//     $scope.message = "This is the demo Contact page!";
-// });
