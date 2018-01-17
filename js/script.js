@@ -35,7 +35,7 @@ app.controller('searchController', function ($scope, $http, $location) {
 app.controller('resultController', function ($scope, $http, $location) {
     'use strict';
     $scope.message = "Search results for 'Jack.'"
-    $http.get("http://itunes.apple.com/search?term=jack&limit=4")
+    $http.get("https://itunes.apple.com/search?term=jack&limit=4")
         .then(function (response) {
             $scope.search = response.data.results;
             // console.log(search);
